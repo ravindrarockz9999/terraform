@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-    project = "mythical-bazaar-470812-n3"
+    project = "my-gcp-project"
     region = "us-central1"
 }
 
@@ -23,4 +23,5 @@ resource "google_compute_subnetwork" "VPC_subnet" {
     network = google_compute_network.vpc_network.name
     region = "asia-south1"
     ip_cidr_range = "10.10.0.0/24"
+
 }
