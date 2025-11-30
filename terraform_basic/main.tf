@@ -3,7 +3,6 @@ provider "google" {
     region = "us-central1"
 }
 
-
 resource "google_compute_instance" "VM" {
     name = "${var.VM_name}"
     zone = "${var.VM_zone}"
@@ -15,9 +14,7 @@ resource "google_compute_instance" "VM" {
      }  
      network_interface {
        network = "default"
-       access_config {
-         
+       access_config {     
        }
      }
-
 }
