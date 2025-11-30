@@ -1,11 +1,11 @@
 provider "google" {
-    project = "mythical-bazaar-470812-n3"
+    project = "my-gcp-project"
     region = "us-central1"
 }
 
 provider "google" {
     alias = "demo"
-    project = "mythical-bazaar-470812-n3"
+    project = "my-gcp-project"
     region = "asia-south1"
 }
 
@@ -22,4 +22,5 @@ resource "google_storage_bucket" "my-bucket-demo" {
     location = "ASIA"  # ASIA multi-region
     storage_class = "STANDARD"
     uniform_bucket_level_access = true
+
 }
