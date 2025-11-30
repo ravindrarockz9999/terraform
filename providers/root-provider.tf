@@ -1,5 +1,5 @@
 provider "google" {
-    project = "mythical-bazaar-470812-n3"
+    project = "my-gcp-project"
     region = "us-central1"
 }
 
@@ -13,4 +13,5 @@ resource "google_storage_bucket" "my_bucket" {
   versioning {
     enabled = true
   }
+
 }
